@@ -1,0 +1,40 @@
+{
+	"name": "import-package",
+	"version": "1.0.0",
+	"description": "Import an npm package from the disk",
+	"repository": "shinnn/npcache",
+	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
+	"license": "ISC",
+	"scripts": {
+		"pretest": "eslint .",
+		"test": "nyc node test.js"
+	},
+	"files": [
+		"index.js"
+	],
+	"keywords": [
+		"npm",
+		"package",
+		"import",
+		"require",
+		"load",
+		"attain",
+		"async"
+	],
+	"dependencies": {
+		"load-from-cwd-or-npm": "^3.0.1"
+	},
+	"devDependencies": {
+		"@shinnn/eslint-config": "^6.8.1",
+		"eslint": "^5.9.0",
+		"nyc": "^13.1.0",
+		"nyc-config-common": "^1.0.1",
+		"tape": "^4.9.1"
+	},
+	"eslintConfig": {
+		"extends": "@shinnn"
+	},
+	"nyc": {
+		"extends": "nyc-config-common"
+	}
+}
